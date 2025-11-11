@@ -58,7 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (confirm.value !== password.value) { setError("confirm", "Passwords must match."); valid = false; }
     }
     if (valid) {
-      alert("Registration successful!");
+      // Show thank-you screen instead of alert
+      const thanks = document.getElementById("thankYouCard");
+      const wrapperCard = document.getElementById("interactiveForm");
+      wrapperCard?.classList.add("hidden");
+      thanks?.classList.remove("hidden");
+
       form.reset();
       ["name","email","password","confirm"].forEach((n) => setError(n, ""));
     }
@@ -90,6 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.style.setProperty("--ry", `0deg`);
     wrapper.style.setProperty("--rx", `0deg`);
     btnShine?.style.setProperty("--bx", `50%`);
+  });
+
+  // Back to form button
+  const backBtn = document.getElementById("backToForm");
+  backBtn?.addEventListener("click", () => {
+    const thanks = document.getElementById("thankYouCard");
+    const wrapperCard = document.getElementById("interactiveForm");
+    thanks?.classList.add("hidden");
+    wrapperCard?.classList.remove("hidden");
   });
 });
 

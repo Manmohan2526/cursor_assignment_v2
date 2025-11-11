@@ -40,6 +40,10 @@ body {
 }
 .form-wrap:hover { box-shadow: 0 24px 70px rgba(0,0,0,0.45); }
 
+.hidden { display: none; }
+.thankyou { text-align: center; }
+.thankyou .btn-primary { margin-top: 12px; }
+
 .form-wrap h1 { margin: 0 0 6px 0; font-size: 28px; }
 .form-wrap .subtitle { margin: 0 0 18px 0; color: #cbd5e1; }
 
