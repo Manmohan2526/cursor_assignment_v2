@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (err) err.textContent = message || "";
   }
   function validateEmail(value) {
-    return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(value);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((value || "").trim());
   }
 
   // Real-time validation
