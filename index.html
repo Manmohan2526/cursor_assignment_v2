@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 6 — Email Validation Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Email Validation Visualizer</h1>
+          <p class="muted">Type an email to see each validation step update in real-time.</p>
+
+          <div class="validator">
+            <div class="input-row">
+              <label for="emailInput">Email</label>
+              <input id="emailInput" type="email" placeholder="e.g. john.doe+news@example.co.uk" />
+              <p class="hint">We check for spaces, one @, valid local and domain, and TLD rules.</p>
+            </div>
+
+            <div class="viz-grid">
+              <div class="panel">
+                <h3>Rules</h3>
+                <ul id="rulesList" class="rules">
+                  <li data-rule="nonEmpty"><span class="dot"></span> Not empty</li>
+                  <li data-rule="noSpaces"><span class="dot"></span> No spaces</li>
+                  <li data-rule="oneAt"><span class="dot"></span> One @ only</li>
+                  <li data-rule="localValid"><span class="dot"></span> Local part valid</li>
+                  <li data-rule="domainValid"><span class="dot"></span> Domain looks valid</li>
+                  <li data-rule="tldValid"><span class="dot"></span> TLD is 2–24 letters</li>
+                </ul>
+              </div>
+
+              <div class="panel">
+                <h3>Breakdown</h3>
+                <div class="breakdown">
+                  <div><span class="key">Local</span> <code id="bdLocal">—</code></div>
+                  <div><span class="key">@</span> <code id="bdAt">—</code></div>
+                  <div><span class="key">Domain</span> <code id="bdDomain">—</code></div>
+                  <div><span class="key">TLD</span> <code id="bdTld">—</code></div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <h3>Regex</h3>
+                <code class="regex" id="regexView">/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/</code>
+                <p class="muted small">We also apply additional checks for domain labels and TLD length.</p>
+              </div>
+            </div>
+
+            <div class="final-status" id="finalStatus" aria-live="polite">Start typing…</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
