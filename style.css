@@ -87,10 +87,6 @@ body {
 
 /* Mobile stacking effect: cards overlap slightly and animate-reveal on scroll */
 @media (max-width: 899px) {
-  .pricing-stack {
-    display: block;
-    perspective: 1000px;
-  }
   .price-card {
     margin: 0 auto;
     width: min(560px, 92vw);
