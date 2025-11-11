@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cursor Assignment V2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand">Cursor Assignment</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#section-one">Section One</a></li>
+            <li><a href="#section-two">Section Two</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="section-one" class="section hero">
+        <div class="container grid-2">
+          <div>
+            <h1>Welcome</h1>
+            <p>
+              This is a simple, responsive webpage with a header, footer, and two content sections.
+              Resize the window to see the layout adapt.
+            </p>
+            <a class="btn" href="#section-two">Learn more</a>
+          </div>
+          <div class="card">
+            <h2>Quick Info</h2>
+            <ul class="checklist">
+              <li>Responsive layout</li>
+              <li>Accessible navigation</li>
+              <li>Clean, modern styles</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-two" class="section content">
+        <div class="container grid-3">
+          <article class="card">
+            <h3>About this page</h3>
+            <p>
+              Built with semantic HTML and mobile‑first CSS. The layout uses flexible grids and
+              sensible defaults for typography and spacing.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Performance</h3>
+            <p>
+              No frameworks required. Minimal CSS and JavaScript for fast loading and smooth interactions.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Get Started</h3>
+            <p>
+              Explore the code in <code>index.html</code>, <code>style.css</code>, and <code>app.js</code>.
+              Tweak the sections to fit your needs.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Cursor Assignment. All rights reserved.</p>
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="#section-one">Top</a></li>
+            <li><a href="#section-two">Content</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
