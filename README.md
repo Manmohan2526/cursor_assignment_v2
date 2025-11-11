@@ -23,7 +23,11 @@
   - IntersectionObserver to animate cards on load and when scrolled into view.
 
 ### Preview
-Below is a preview image for Task 3:
+Previews for each task:
+
+- Task 1: [Preview image](https://github.com/Manmohan2526/cursor_assignment_v2/blob/task_1/task_1_preview.png)
+- Task 2: [Preview image](https://github.com/Manmohan2526/cursor_assignment_v2/blob/task_2/task_2_preview.png)
+- Task 3:
 
 ![Task 3 Preview](./task_3_preview.png)
 
