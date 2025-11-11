@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 3 — Card Grids (Grid + Flex) with Animations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand">Cursor Assignment</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#grid-cards">Grid Cards</a></li>
+            <li><a href="#flex-cards">Flex Cards</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="grid-cards" class="section">
+        <div class="container">
+          <h1>CSS Grid Card Layout</h1>
+          <p>Responsive grid using auto-fit and minmax. Cards animate on load and on scroll.</p>
+          <div class="cards-grid reveal-once">
+            <article class="card reveal">
+              <h3>Grid Card 1</h3>
+              <p>Auto-fit grid adapts to viewport width.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Grid Card 2</h3>
+              <p>Each card animates with a subtle rise and fade.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Grid Card 3</h3>
+              <p>Uses modern CSS with clean semantics.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Grid Card 4</h3>
+              <p>Fully responsive without media query overload.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Grid Card 5</h3>
+              <p>Accessible and keyboard-friendly structure.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Grid Card 6</h3>
+              <p>Simple, performant animations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="flex-cards" class="section">
+        <div class="container">
+          <h2>Flexbox Card Rows</h2>
+          <p>Wrapping flex rows with equal-height cards and responsive gaps.</p>
+          <div class="cards-flex reveal-once">
+            <article class="card reveal">
+              <h3>Flex Card A</h3>
+              <p>Flexbox for simple horizontal flows.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Flex Card B</h3>
+              <p>Items wrap and stay nicely spaced.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Flex Card C</h3>
+              <p>Cards match height and align content.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Flex Card D</h3>
+              <p>Mobile-first, then enhance as space grows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
