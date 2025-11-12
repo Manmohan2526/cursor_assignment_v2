@@ -24,3 +24,6 @@
 ### Summary
 This task sets up a clean, fast-loading, responsive page using semantic HTML, modern CSS, and a tiny bit of JS—kept framework-free for simplicity and performance.
 
+### Preview
+[Preview Image]([url](https://raw.githubusercontent.com/Manmohan2526/cursor_assignment_v2/refs/heads/task_1/task_1_preview.png))
+
