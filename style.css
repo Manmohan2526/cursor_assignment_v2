@@ -56,6 +56,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
+  justify-items: center;
 }
 
 .team-card {
@@ -68,8 +69,16 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 12px;
+.team-card {
   align-items: center;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  width: 100%;
+  max-width: 340px;
+}
+@media (max-width: 719px) {
+  .team-card {
+    max-width: 100%;
+  }
 }
 .team-card:hover {
   transform: translateY(-3px);
