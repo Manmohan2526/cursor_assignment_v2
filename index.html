@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team Directory</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">Team Directory</h1>
+        <p class="tagline">Browse and search your organization’s teammates</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="controls">
+            <div class="field">
+              <label for="search">Search</label>
+              <input id="search" type="text" placeholder="Search by name, role, or location" />
+            </div>
+            <div class="field">
+              <label for="departmentFilter">Department</label>
+              <select id="departmentFilter">
+                <option value="all">All departments</option>
+              </select>
+            </div>
+            <div class="summary" id="summary">Loading team…</div>
+          </div>
+
+          <div class="team-grid" id="teamGrid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+

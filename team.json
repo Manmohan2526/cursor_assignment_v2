@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "role": "Engineering Manager",
+    "department": "Engineering",
+    "location": "San Francisco, USA",
+    "email": "alice.johnson@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Brian Lee",
+    "role": "Frontend Developer",
+    "department": "Engineering",
+    "location": "Remote, Canada",
+    "email": "brian.lee@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Carla Mendes",
+    "role": "Product Designer",
+    "department": "Design",
+    "location": "Lisbon, Portugal",
+    "email": "carla.mendes@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Diego Rossi",
+    "role": "Product Manager",
+    "department": "Product",
+    "location": "Milan, Italy",
+    "email": "diego.rossi@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Emily Chen",
+    "role": "QA Engineer",
+    "department": "Quality",
+    "location": "Singapore",
+    "email": "emily.chen@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Farid Khan",
+    "role": "DevOps Engineer",
+    "department": "Infrastructure",
+    "location": "Dubai, UAE",
+    "email": "farid.khan@example.com"
+  }
+]
+
+

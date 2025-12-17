@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  color: #0f172a;
+  background: #f8fafc;
+}
+.container { width: min(1100px, 92vw); margin-inline: auto; }
+.section { padding: 56px 0; }
+
+.site-header {
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0;
+}
+.brand { font-size: 24px; font-weight: 800; }
+.tagline { margin: 0; color: #64748b; }
+
+.controls {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+@media (min-width: 720px) {
+  .controls {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1.2fr);
+    align-items: flex-end;
+  }
+}
+.field { display: grid; gap: 6px; }
+.field label { font-weight: 600; color: #475569; }
+.field input,
+.field select {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.field input:focus,
+.field select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.25);
+}
+.summary { font-size: 14px; color: #64748b; }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.team-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px 14px 12px 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 24px rgba(15,23,42,0.04);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 12px;
+  align-items: center;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(15,23,42,0.08);
+  border-color: #bfdbfe;
+}
+.avatar {
+  width: 40px; height: 40px;
+  border-radius: 999px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700;
+  color: #0f172a;
+  background: #e0f2fe;
+}
+.info { min-width: 0; }
+.name { font-weight: 700; margin: 0; }
+.role { margin: 0; font-size: 14px; color: #475569; }
+.meta {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: #64748b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pill {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+}
+
